@@ -1,7 +1,10 @@
-<?php include_once "inc/header.php"; ?>
+<?php
+session_start();
+include_once "inc/header.php";
+?>
 
 <div class="container">
-    <form action="connexion.php" method="post">
+    <form action="model/connexion.php" method="post">
             <div class="form-group">
                 <label for="email">Email:</label>
                 <input type="email" class="form-control" id="email" name="email">
