@@ -1,6 +1,6 @@
 <?php
 
-require_once "../inc/database.php";
+require_once "/inc/database.php";
 
 
 
@@ -26,7 +26,7 @@ if (isset($_POST['add_room'])) {
 
 
 
-    $destination = $_SERVER["DOCUMENT_ROOT"] .'/hotel/assets/img/' . $imgName;
+    $destination = $_SERVER["DOCUMENT_ROOT"] .'/assets/img/' . $imgName;
 
 
 
@@ -52,7 +52,7 @@ if (isset($_POST['add_room'])) {
 
         //redirection vers list_room.php
 
-        header('localhost:http://hotel.com/admin/room_list.php');
+        header('localhost:admin/room_list.php');
 
     } catch (PDOException $e) {
 

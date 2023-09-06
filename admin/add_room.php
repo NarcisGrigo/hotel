@@ -1,8 +1,8 @@
 <?php
 
-include_once '../inc/header.php';
+include_once '/inc/header.php';
 
-include_once '../model/functions.php';
+include_once '/model/functions.php';
 
 $listHotel = hotelList();
 
@@ -12,7 +12,7 @@ $listHotel = hotelList();
 
 <div class="container">
 
-    <form action="../model/db_room.php" method="post" enctype="multipart/form-data">
+    <form action="/model/db_room.php" method="post" enctype="multipart/form-data">
 
 
 
@@ -109,4 +109,4 @@ $listHotel = hotelList();
 
 
 
-<?php include_once '../inc/footer.php'; ?>
+<?php include_once '/inc/footer.php'; ?>

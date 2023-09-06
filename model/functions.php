@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER["DOCUMENT_ROOT"] . "/hotel/inc/database.php";
+require_once $_SERVER["DOCUMENT_ROOT"] . "/inc/database.php";
 function hotelList()
 {
 
@@ -15,10 +15,6 @@ function hotelList()
 
     try {
 
-
-
-
-
         $request->execute();
 
         //recuperer le resultat dans un tableau
@@ -28,16 +24,11 @@ function hotelList()
     } catch (PDOException $e) {
 
         echo $e->getMessage();
-
     }
-
-
-
 }
 
 function roomList()
 {
-
     // se connecter à la bd  ou bd
     $db = dbConnexion();
 
@@ -58,4 +49,17 @@ function roomList()
 
     }
 
+}
+
+function userBookList($idUser) {
+    $db = dbConnexion();
+    $request = $db->prepare("SELECT * FROM bookings WHERE user_id = ? AND booking_state = ?");
+    $userBookList = null;
+    try {
+        $request->execute(array($idUser, 'in progress'));
+        $userBookList = $request->fetchAll(PDO::FETCH_ASSOC);
+    }catch(PDOException $e) {
+        echo $e->getMessage();
+    }
+    return $userBookList;
 }

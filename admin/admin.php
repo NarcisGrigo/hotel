@@ -5,11 +5,11 @@ session_start();
 
 if (!isset($_SESSION['role']) || $_SESSION['role'] != "admin") {
 
-    header('Location: http://localhost/HOTEL/login.php');
+    header('Location: login.php');
 
 }
 
-include_once "../inc/header.php"; ?>
+include_once "/inc/header.php"; ?>
 
 
 
@@ -107,4 +107,4 @@ include_once "../inc/header.php"; ?>
 
 
 
-<?php include_once "../inc/footer.php"; ?>
+<?php include_once "/inc/footer.php"; ?>

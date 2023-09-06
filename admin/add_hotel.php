@@ -1,7 +1,7 @@
-<?php include_once "../inc/header.php"; ?>
+<?php include_once "/inc/header.php"; ?>
 <div class="container">
 
-    <form action="../model/db_hotel.php" method="post">
+    <form action="/model/db_hotel.php" method="post">
 
         <div class="form-group">
 
@@ -45,4 +45,4 @@
     </form>
 
 </div>
-<?php include_once "../inc/footer.php"; ?>
+<?php include_once "/inc/footer.php"; ?>

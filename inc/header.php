@@ -16,7 +16,7 @@
     <!-- créer la navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="http://localhost/hotel">DELUXE HOTEL</a>
+            <a class="navbar-brand" href="">DELUXE HOTEL</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -24,10 +24,10 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="http://localhost/hotel/login.php">Login</a>
+                        <a class="nav-link active" aria-current="page" href="login.php">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="http://localhost/hotel/register.php">Sign-up</a>
+                        <a class="nav-link" href="register.php">Sign-up</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Pricing</a>

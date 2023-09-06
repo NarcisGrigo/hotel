@@ -1,4 +1,4 @@
-<?php require_once "../inc/database.php";
+<?php require_once "/inc/database.php";
 
 
 if (isset($_POST["add_hotel"])) {
@@ -25,7 +25,7 @@ if (isset($_POST["add_hotel"])) {
 
         $request->execute(array($hotelName, $location, $capacityHotel));
 
-        header("Location: http://localhost/HOTEL/admin/hotel_list.php");
+        header("Location: admin/hotel_list.php");
 
     } catch (PDOException $e) {
 

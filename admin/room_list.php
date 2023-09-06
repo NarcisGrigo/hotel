@@ -1,6 +1,6 @@
-<?php include_once '../inc/header.php';
+<?php include_once '/inc/header.php';
 
-require_once '../model/functions.php';
+require_once '/model/functions.php';
 
 $listRoom = roomList();
 
@@ -84,4 +84,4 @@ $listRoom = roomList();
 
 </div>
 
-<?php include_once '../inc/footer.php' ?>
+<?php include_once '/inc/footer.php' ?>

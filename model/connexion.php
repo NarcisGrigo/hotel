@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "../inc/database.php";
+require_once "/inc/database.php";
 if (isset($_POST['submit'])) {
     $email = htmlspecialchars($_POST['email']);
     $password = htmlspecialchars($_POST['password']);
@@ -30,12 +30,12 @@ if (isset($_POST['submit'])) {
                 // verify if the user is an admin
                 if ($userInfo['role'] == "admin") {
                     $_SESSION['role'] = $userInfo['role'];
-                    header("Location: http://localhost/hotel/admin/admin.php");
+                    header("Location: admin/admin.php");
                 } else {
                     // définir la variable de session role
                     $_SESSION['role'] = $userInfo['role'];
                     $_SESSION['id_user'] = $userInfo['id_user'];
-                    header("Location: http://localhost/hotel/user_home.php");
+                    header("Location: user_home.php");
                 }
             } else {
                 echo "Oh, you're being clever !!";
